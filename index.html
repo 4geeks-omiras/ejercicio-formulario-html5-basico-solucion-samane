@@ -1,27 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
 
     <title>Formulario básico HTML5</title>
-</head>
+  </head>
 
-<body class="container">
-    <form method="post" action="">
+  <body class="container">
+    <form method="post" action=" https://singulars2023.free.beeceptor.com">
+      <fieldset>
+        <label for="nombre">Nombre: </label>
+        <input
+          type="text"
+          required
+          maxlength="50"
+          placeholder="Óscar"
+          name="nombre"
+          id="nombre"
+          required
+        />
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          name="edad"
+          min="18"
+          max="99"
+          placeholder="24 años"
+          required
+        />
 
-        <fieldset>
+        <label for="Dni">DNI</label>
+        <input
+          type="text"
+          max="9"
+          name="Dni"
+          required
+          pattern="[0-9]{9}[A-z]"
+          placeholder="DNI"
+        />
+        <label type="text" for="cidudad">Cidudad de origen</label>
+        <input
+          type="text"
+          name="cidudad"
+          maxlength="100"
+          name="cidudad"
+          placeholder="Barcelona"
+          required
+        />
 
-            <label for="nombre">Nombre: </label>
-            <input type="text" required maxlength="50" placeholder="Óscar" name="nombre" id="nombre" required>
-        </fieldset>
+        <label for="transporte">Tipo de transporte</label>
+        <select name="transporte" name="transporte" required>
+          <option value="A pie" selected>A pie</option>
+          <option value="Transporte publico">Transporte publico</option>
+          <option value="Transporte privado">Transporte privado</option>
+        </select>
+        <lable name="obejtivo-curso">Objetivos de curso</lable>
+        <textarea
+          name="obejtivo-curso"
+          id=""
+          cols="30"
+          rows="10"
+          maxlength="1024"
+        ></textarea>
 
         <input type="submit" class="submit" id="submit" value="Enviar" />
-
+      </fieldset>
     </form>
-</body>
-
+  </body>
 </html>
