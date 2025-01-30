@@ -41,7 +41,7 @@
           max="9"
           name="Dni"
           required
-          pattern="[0-9]{9}[A-z]"
+          pattern="[0-9]{8}[A-Za-z]"
           placeholder="DNI"
         />
         <label type="text" for="cidudad">Cidudad de origen</label>
@@ -59,6 +59,7 @@
           <option value="A pie" selected>A pie</option>
           <option value="Transporte publico">Transporte publico</option>
           <option value="Transporte privado">Transporte privado</option>
+          <option value="online">El curso es online, no necesito transporte</option>
         </select>
         <lable name="obejtivo-curso">Objetivos de curso</lable>
         <textarea
